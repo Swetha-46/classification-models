@@ -1,12 +1,12 @@
-a. Problem Statement:
+**a. Problem Statement:**
 The goal is to understand and model the factors that influence student academic performance and predict student exam outcomes 
 using machine learning models based on various features like hours studied, attendance, parental involvement, access to resources, sleep hours and previous scores etc.
 
 A student is classified as:
 Pass (target = 1) if exam score ≥ 35
 Fail (target = 0) if exam score < 35
-==================================================================================================
-b. Dataset Description:
+===================================================================================
+**b. Dataset Description:**
 Dataset Name: StudentPerformanceFactors
 Source: Kaggle
 Type: Binary Classification
@@ -38,8 +38,8 @@ The dataset contains student-related features such as:
 | Gender                         | Student’s gender                               |                    
 | Exam_Score                     | Final exam result (target variable)            |
 
-===========================================================================================================
-c. Models Used:
+===================================================================================
+**c. Models Used:**
 The following Machine Learning classification models were implemented:
 1.Logistic Regression
 2.Decision Tree Classifier
