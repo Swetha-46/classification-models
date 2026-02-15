@@ -3,8 +3,8 @@ The goal is to understand and model the factors that influence student academic 
 using machine learning models based on various features like hours studied, attendance, parental involvement, access to resources, sleep hours and previous scores etc.
 
 A student is classified as:
-Pass (target = 1) if exam score ≥ 35
-Fail (target = 0) if exam score < 35
+High Scorer (target = 1) if exam score ≥ 70
+Others (target = 0) if exam score < 70
 ===================================================================================
 **b. Dataset Description:**
 Dataset Name: StudentPerformanceFactors

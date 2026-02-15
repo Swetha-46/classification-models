@@ -46,7 +46,7 @@ for file in files_to_delete:
 data = pd.read_csv("dataset/training_dataset.csv")
 
 # Create target column
-data["target"] = data["Exam_Score"].apply(lambda x: 1 if x >= 35 else 0)
+data["target"] = data["Exam_Score"].apply(lambda x: 1 if x >= 70 else 0)
 
 # Drop original score column
 data.drop("Exam_Score", axis=1, inplace=True)
@@ -60,10 +60,9 @@ for col in data.select_dtypes(include='object').columns:
 X = data.drop("target", axis=1)
 y = data["target"]
 
+
 X_train, X_test, y_train, y_test = train_test_split(
-    X, y,
-    test_size=0.2,
-    random_state=42
+    X, y, test_size=0.2, random_state=42, stratify=y
 )
 
 # Save fresh test dataset
